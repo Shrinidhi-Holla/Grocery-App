@@ -1,0 +1,8 @@
+<!-- <app-dashboard></app-dashboard> -->
+<div class="prod-cat-container" >
+    <div class="cards"  >
+        <div class="card-img" *ngFor="let cat of catalogue;let i=index">
+        <img [src]=prods.image alt="" *ngFor="let prods of cat" (click)="this.product_category_select(prods.prodname)"> 
+        </div>
+    </div>
+</div>

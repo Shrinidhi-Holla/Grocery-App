@@ -1,0 +1,27 @@
+<div class="navbar-container">
+        <!-- <div class="nav-logo"> -->
+            <img src="../assets/images/logo.png" alt="logo" class="nav-logo">
+        <!-- </div> -->
+        <div class="location-container">
+          <select class='select-option' #mySelect name="Select Location" 
+            (change)='onOptionsSelected(mySelect.value)'>
+              <option class='option' 
+              *ngFor='let option of location' 
+              [value]="option.name">{{option.name}}</option>
+          </select>
+        </div>
+        <div class="searchbar">
+            <input type="text" class="searchfield" placeholder="Search for product" [(ngModel)]="searchstring">
+            <!-- <label>Search for products</label> -->
+            <button class="searchbtn" (click)="searchbtn()"> <mat-icon>search</mat-icon></button>
+          <label class="emptySrchWarn" *ngIf="isOn">
+            Please enter valid product!
+          </label>
+          </div>
+        <div class="nav-elements">
+            <a href="#">LOGIN</a>
+            <button class="shoppingcart"(click)="displaycart()"><mat-icon>shopping_cart &nbsp;</mat-icon> My Cart</button>
+        </div>
+        
+    </div>
+    
