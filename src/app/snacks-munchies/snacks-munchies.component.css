@@ -1,0 +1,43 @@
+.snacks-container{
+ padding-left: 50px;   
+ padding-right: 50px;
+ overflow: hidden;
+}
+
+h1 {
+    font-weight: 500;
+}
+img{
+    height: 10em;
+}
+.card{
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.578);
+    transition: border-color 0.5s ease;
+    transition: box-shadow 0.5 ease;
+}
+.card:hover{
+    border-color: orange;
+    box-shadow: rgba(111, 107, 100, 0.2) 0px 7px 29px 0px;
+}
+
+.cards-container{
+    position: relative;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+}
+
+.prodname{
+    padding: 10px;
+}
+.card-image{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* text-align: center;     */
+}
+
+img{
+    width: 150px;
+}

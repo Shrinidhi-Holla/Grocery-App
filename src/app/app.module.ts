@@ -11,6 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProductCatalogueComponent } from './product-catalogue/product-catalogue.component';
+import { SnacksMunchiesComponent } from './snacks-munchies/snacks-munchies.component';
+
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import { ProductCatalogueComponent } from './product-catalogue/product-catalogue
     SidemenuComponent,
     DashboardComponent,
     ProductCatalogueComponent,
+    SnacksMunchiesComponent,
   ],
   imports: [
     BrowserModule,
