@@ -12,6 +12,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProductCatalogueComponent } from './product-catalogue/product-catalogue.component';
 import { SnacksMunchiesComponent } from './snacks-munchies/snacks-munchies.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { SnacksMunchiesComponent } from './snacks-munchies/snacks-munchies.compo
     DashboardComponent,
     ProductCatalogueComponent,
     SnacksMunchiesComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
